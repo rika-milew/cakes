@@ -3,7 +3,7 @@ cakes = [
 name: "Лаванда",
 image: "images/cake1.jpg",
 price: "19.99 р.",
-decription: "<p>Торт состоит из нескольких слоёв нежного масляного бисквита.</p><p>Слои соединены джемом из черной смородины и кремом, который приготовлен из сыра творожного, сметаны и безе с добавлением лавандового сиропа.</p><p>Украшен торт лепестками из шоколада и лаванды.</p>",
+decription: "Торт состоит из нескольких слоёв нежного масляного бисквита. Слои соединены джемом из черной смородины и кремом, который приготовлен из сыра творожного, сметаны и безе с добавлением лавандового сиропа. Украшен торт лепестками из шоколада и лаванды.",
 },
     {
 name: "Греческий флёр",
@@ -21,7 +21,7 @@ decription: "Красный бархат - сочетание роскошног
 name: "Чизберри",
 image: "images/cake4.jpg",
 price: "24.99 р.",
-decription: "В основе тортика слои белого лёгкого бисквита, пропитанные коньяком. Бисквит словно окутан воздушным кремом из творожного сыра и натуральных сливок, смешанные с ягодным конфитюром из малины и черники. Внутри кроются цельносваренные ягоды – малиновый и черничный слои. Вкус крема многогранен: слегка солоноватый творожный сыр дополнен в меру сладким вкусом натуральных спелых ягод малины и черники",
+decription: "В основе тортика слои белого лёгкого бисквита, пропитанные коньяком. Бисквит словно окутан воздушным кремом из творожного сыра и натуральных сливок, смешанные с ягодным конфитюром из малины и черники. Внутри кроются цельносваренные ягоды – малиновый и черничный слои. Вкус крема многогранен: слегка солоноватый творожный сыр дополнен в меру сладким вкусом натуральных спелых ягод малины и черники.",
 },
     {
 name: "Творожно-Малиновый",
@@ -109,10 +109,10 @@ decription: "Песочный корж на масле сливочном, пр�
 },
 ]
 
-let s = "";
+let cakeCards = "";
 
 for (i=0; i<cakes.length; i++) {
-s += `
+    cakeCards += `
 <div class="card" onclick="showCard('${cakes[i].name}','${cakes[i].price}','${cakes[i].decription}','${cakes[i].image}')">
 <img src=${cakes[i].image} alt="" class="menu-image">
 <h3>${cakes[i].name}</h3>
@@ -121,7 +121,7 @@ s += `
 `;
 }
 
-cards.innerHTML = s;
+cards.innerHTML = cakeCards;
 
 
 cheesecakes = [
@@ -221,36 +221,24 @@ newCard = document.getElementById('fullCard');
 
 
 function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
-    // newFullCard = document.getElementById(`full-item-card${cakeId}`);
-    // console.log(newFullCard); 
     newCard.innerHTML = `
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
-    <div>
+    <div class="full-card___photo">
    <img src="${cakeImage}" alt="" class="full-card__image" onclick="showImage()">
    </div>
    <div class="full-card__text">
    <p>${cakeName}</p>
    <p>${cakePrice}</p>
-   <p>${cakeDescription}</p>
+   <p class="cake-description">${cakeDescription}</p>
    </div>
    </div>
    `;
-// document.body.classList.add("windowOpened");
-    newCard.classList.add("card-opened");
-//    content.classList.toggle("window-opened");
-// cards.classList.add("full-card-opened");
-   
+   newCard.classList.add("card-opened");
   }
 
   function closeCard() {
-    // content.style.display = 'block';
-    // content.classList.toggle("window-opened");
-    // newCard.style.display = 'none';
     newCard.classList.remove("card-opened");
-    // content.style.opacity = '1';
-    
-// content.classList.remove("window-opened");
   }
 
   function showCheesecakeCard(cheesecakeName, cheesecakePrice, cheesecakeDescription, cheesecakeImage) {
@@ -258,7 +246,7 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
     newCard.innerHTML = `
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
-    <div>
+    <div class="full-card___photo">
    <img src="${cheesecakeImage}" alt="" class="full-card__image">
    </div>
    <div class="full-card__text">
@@ -275,7 +263,7 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
    newCard.innerHTML = `
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
-    <div>
+    <div class="full-card___photo">
    <img src="${eclairImage}" alt="" class="full-card__image">
    </div>
    <div class="full-card__text">
@@ -295,15 +283,14 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
 let fullImage = "";
    
 
-    function showImage() {
-        fullImage = document.getElementsByClassName('full-card__image');
-        // newFullCard = document.getElementById(`full-item-card${cakeId}`);
-        // console.log(newFullCard); 
-    //     newImageCard.innerHTML = `
-    //     <div class="full-image-card">
-    //    <img src="${cakeImage}" alt="" class="full-card__big-image">
+    // function showImage(cakeImage) {
+    //     newCard.innerHTML = `
+    //     <div class="full-card">
+    //     <img src="images/close.png" alt="" class="closeImage">
+    //     <div>
+    //    <img src="${cakeImage}" alt="" class="full-card__image" onclick="showImage(cakeImage)">
+    //    </div>
     //    </div>
     //    `;
-    //    newImageCard.classList.add("full-image-card-opened");
-    fullImage.classList.add("full-image-card-opened");
-      }
+       
+    //   }
