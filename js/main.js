@@ -107,6 +107,12 @@ image: "images/cake18.jpg",
 price: "18.99 р.",
 decription: "Песочный корж на масле сливочном, прослоен ягодным суфле, сверху залит шоколадной глазурью и украшен белковым кремом.",
 },
+{
+    name: "Крембери",
+    image: "images/cake19.jpg",
+    price: "22.99 р.",
+    decription: "В основе тортика слои рассыпчатого песочного бисквита, в состав которых входит настоящее сливочное масло и небольшое количество сгущенного молока. Песочные коржи пропитаны легким воздушным кремом из сметанки и натурального джема из малины и черники. Внешне украшен вуалью из тончайшего слоя белой глазури и декорирован листиками мяты и соблазнительными ягодами голубики.",
+    },
 ]
 
 let cakeCards = "";
@@ -139,8 +145,8 @@ decription: "Один песочный слой на основе сливочн
 },
     {
 name: "Шоколадный",
- image: "images/cheesecake3.jpg",
- price: "25.99 р.",
+image: "images/cheesecake3.jpg",
+price: "25.99 р.",
 decription: "Нижний слой чизкейка изготовлен из шоколадного бисквита с добавлением масла сливочного. В основе начинки для чизкейка сыр рикотта, сметана с добавлением яиц и шоколада.",
 },
     {
@@ -225,14 +231,14 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
     <div class="full-card___photo">
-   <img src="${cakeImage}" alt="" class="full-card__image" onclick="showImage()">
-   </div>
-   <div class="full-card__text">
-   <p>${cakeName}</p>
-   <p>${cakePrice}</p>
-   <p class="cake-description">${cakeDescription}</p>
-   </div>
-   </div>
+    <img src="${cakeImage}" alt="" class="full-card__image" onclick="showImage()">
+    </div>
+    <div class="full-card__text">
+    <p>${cakeName}</p>
+    <p>${cakePrice}</p>
+    <p class="cake-description">${cakeDescription}</p>
+    </div>
+    </div>
    `;
    newCard.classList.add("card-opened");
   }
@@ -247,14 +253,14 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
     <div class="full-card___photo">
-   <img src="${cheesecakeImage}" alt="" class="full-card__image">
-   </div>
-   <div class="full-card__text">
-   <p>${cheesecakeName}</p>
-   <p>${cheesecakePrice}</p>
-   <p>${cheesecakeDescription}</p>
-   </div>
-   </div>
+    <img src="${cheesecakeImage}" alt="" class="full-card__image">
+    </div>
+    <div class="full-card__text">
+    <p>${cheesecakeName}</p>
+    <p>${cheesecakePrice}</p>
+    <p>${cheesecakeDescription}</p>
+    </div>
+    </div>
    `;
     newCard.classList.add("card-opened");
   }
@@ -264,14 +270,14 @@ function showCard(cakeName, cakePrice, cakeDescription, cakeImage) {
     <div class="full-card">
     <img src="images/close.png" alt="" class="closeImage" onclick="closeCard()">
     <div class="full-card___photo">
-   <img src="${eclairImage}" alt="" class="full-card__image">
-   </div>
-   <div class="full-card__text">
-   <p>${eclairName}</p>
-   <p>${eclairPrice}</p>
-   <p>${eclairDescription}</p>
-   </div>
-   </div>
+    <img src="${eclairImage}" alt="" class="full-card__image">
+    </div>
+    <div class="full-card__text">
+    <p>${eclairName}</p>
+    <p>${eclairPrice}</p>
+    <p>${eclairDescription}</p>
+    </div>
+    </div>
    `;
     newCard.classList.add("card-opened");
     }
@@ -294,3 +300,24 @@ let fullImage = "";
     //    `;
        
     //   }
+
+
+    let menuBtn = document.querySelector('.menu-btn');
+    let menu = document.querySelector('.menu');
+    let body = document.querySelector('.body');
+    let logo = document.querySelector('.main-logo');
+   
+    menuBtn.addEventListener('click', function(){
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+        body.classList.toggle('lock');
+        logo.classList.toggle('hide');
+    })
+
+    menu.addEventListener('click', function(){
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+        body.classList.toggle('lock');
+        logo.classList.toggle('hide');
+    })
+   
