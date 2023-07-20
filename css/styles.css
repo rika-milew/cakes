@@ -103,33 +103,33 @@ a {
     text-align: center;
     background-color: var(--main-background-color);
     font-size: 32px;
- }
+}
  
- .logo2 {
+.logo2 {
      width: 200px;
- }
+}
 
- .intro-section__images {
+.intro-section__images {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      font-size: 36px;
- }
+}
  
- .intro-section__image {
+.intro-section__image {
      display: flex;
      flex-direction: column;
      padding: 20px;
- }
+}
 
- .intro-section__image:hover {
+.intro-section__image:hover {
     animation: pulse; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1.5s; /* don't forget to set a duration! */
 }
  
- .intro-image {
+.intro-image {
      height: 150px;
      margin: 40px auto 25px;
- }
+}
 
 /* торты  */
 
@@ -303,7 +303,7 @@ a {
     padding: 50px 0 5px;
     background-color: var(--main-background-color);
     font-family: 'Inter', sans-serif;
-font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .buy-section__content {
@@ -446,7 +446,7 @@ font-family: 'Lato', sans-serif;
     width: 100%;
     top: 0;
     right: 0;
-   bottom: 0;
+    bottom: 0;
     left: 0;
     /* margin: 0 auto; */
     /* height: 100vh; */
@@ -549,7 +549,6 @@ font-family: 'Lato', sans-serif;
     .container {
         padding: 0 30px;
     }
-  
 }
 
 
@@ -1328,6 +1327,8 @@ font-family: 'Lato', sans-serif;
         width: 30px;
         height: 30px;
         position: absolute;
+        top: 15px;
+        right: 20px;
         z-index: 5;
         overflow: hidden;
         margin-left: 20px;
@@ -1360,7 +1361,7 @@ font-family: 'Lato', sans-serif;
         height: 250px;
     }
 
-     .intro-image {
+    .intro-image {
         height: 80px;
         margin: 40px auto 25px;
     }
@@ -1388,7 +1389,7 @@ font-family: 'Lato', sans-serif;
         margin-bottom: 3px;
      }
 
-     .map-section__map {
+    .map-section__map {
         height: 220px;
     }
 
@@ -1458,6 +1459,11 @@ font-family: 'Lato', sans-serif;
 
     .intro-section__images p {
         font-size: 28px;
+    }
+
+    .menu-btn {
+        top: 15px;
+        right: 20px;
     }
 }
 
@@ -1554,6 +1560,11 @@ font-family: 'Lato', sans-serif;
      .intro-image {
         height: 115px;
     }
+
+    .menu-btn {
+        top: 10px;
+        right: 18px;
+    }
 }
 
 
@@ -1578,6 +1589,11 @@ font-family: 'Lato', sans-serif;
 
     .category-headline {
         width: 50%;
+    }
+
+    .menu-btn {
+        top: 10px;
+        right: 15px;
     }
 }
 
@@ -1611,6 +1627,11 @@ font-family: 'Lato', sans-serif;
 
     .intro-section__images p {
         font-size: 26px;
+    }
+
+    .menu-btn {
+        top: 10px;
+        right: 12px;
     }
 }
 
@@ -1706,6 +1727,11 @@ font-family: 'Lato', sans-serif;
     .eclairs-headline {
         width: 45%;
     }
+
+    .menu-btn {
+        top: 8px;
+        right: 10px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -1748,5 +1774,9 @@ font-family: 'Lato', sans-serif;
     .main-logo {
         right: 16%;
         top: 6%;
+    }
+    .menu-btn {
+        top: 5px;
+        right: 8px;
     }
 }
