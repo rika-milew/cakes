@@ -137,6 +137,7 @@ a {
     background-image: url(../images/cakes-background1.jpg);
     height: 576px;
     background-size: cover;
+    background-position: 40%;
     padding: 90px 0;
     position: relative;
 }
@@ -159,6 +160,7 @@ a {
 .cheesecake-section {
     background-image: url(../images/cheesecakes-background1.png);
     background-size: cover;
+    background-position: 35%;
     height: 576px;
     padding: 50px 0;
     position: relative;
@@ -173,8 +175,9 @@ a {
 /* эклеры  */
 
 .eclair-section {
-    background-color: var(--main-background-color);
+    background-image: url(../images/eclairs-background.png);
     background-size: cover;
+    background-position: 42%;
     height: 582px;
     padding: 90px 0;
     position: relative;
