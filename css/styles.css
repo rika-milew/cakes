@@ -164,6 +164,7 @@ a {
     height: 576px;
     padding: 50px 0;
     position: relative;
+    
 }
 
 .background-image4 {
@@ -367,7 +368,7 @@ a {
 /* футер */
 
 .footer-section {
-    padding: 5px 10px 15px;
+    padding: 10px;
     background-color: var(--main-background-color);
 }
 
@@ -375,6 +376,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     width: 50%;
     margin: 0 auto 20px;
 }
@@ -1161,7 +1163,7 @@ a {
     .intro-section__images p {
         font-size: 22px;
     }
-    
+
     .full-card {  
         max-height: 760px;
     }
