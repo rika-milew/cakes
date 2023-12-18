@@ -106,19 +106,19 @@ a {
 }
  
 .logo2 {
-     width: 200px;
+    width: 200px;
 }
 
 .intro-section__images {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     font-size: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 36px;
 }
  
 .intro-section__image {
-     display: flex;
-     flex-direction: column;
-     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .intro-section__image:hover {
@@ -127,8 +127,8 @@ a {
 }
  
 .intro-image {
-     height: 150px;
-     margin: 40px auto 25px;
+    height: 150px;
+    margin: 40px auto 25px;
 }
 
 /* торты  */
@@ -767,6 +767,10 @@ a {
     .closeImage {
         width: 25px;
     }
+
+    .footer-section__content {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 884px) {
@@ -931,6 +935,10 @@ a {
     .menu {
         width: 76%;
     }
+
+    .footer-section__content {
+        width: 60%;
+    }
 }
 
 
@@ -1035,7 +1043,6 @@ a {
 /* 600px - 700px  */
 
 @media screen and (max-width: 700px) {
-
     .items-section {
         grid-template-columns: 1fr;
         row-gap: 50px; 
@@ -1136,6 +1143,10 @@ a {
     .full-card {      
         max-height: 780px;
     }
+
+    .footer-section__content {
+        width: 70%;
+    }
 }
 
 
@@ -1150,6 +1161,7 @@ a {
     .intro-section__images p {
         font-size: 22px;
     }
+    
     .full-card {  
         max-height: 760px;
     }
@@ -1351,6 +1363,7 @@ a {
         
         z-index: 1000;
     }
+
     .menu-btn span:nth-of-type(2) {
         top: calc(50% - 8px);
     }
@@ -1390,7 +1403,7 @@ a {
     .buy-section > .container > p {
         font-size: 20px;
         margin-bottom: 3px;
-     }
+    }
 
     .map-section__map {
         height: 220px;
