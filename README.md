@@ -14,6 +14,7 @@ A responsive one-page website for a bakery, showcasing products, reviews, and co
 - Smooth navigation with anchor links
 - Sticky navigation bar
 - Scroll animations (Intersection Observer)
+- Modal window for individual cake preview
 - Clean and semantic HTML structure
 - Elegant pastel-themed design
 
